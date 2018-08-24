@@ -1,0 +1,120 @@
+@charset "utf-8";
+/* CSS Document */
+#test11{
+	height: 50px;
+	width: 100%;
+	border:#00F 1px solid;
+	background:url(image/b1.jpg)repeat;
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	position:fixed;
+}
+.kid{
+top60px;
+	left: 112px;
+	border: #FF6 1px solid;
+	padding: 35px 10px 10px 10px;
+	width: 980px;
+	height: 192px;
+	position: absolute;
+	background: url(image/banner%20ASEAN.jpg) repeat-x;
+	font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+	word-spacing: 5px;
+	color: #000;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	top: -5px;
+}
+.kid1{
+ top:240px;
+	left:2px;
+	border: #00F 1px solid;
+	padding: 15px 10px 10px 10px;
+	width:985px;
+	height:auto;
+	position:absolute;
+	background: #FFF;
+	font:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+	word-spacing: 5px;
+	color:#000;
+	text-indent:30px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	}
+	.kid2{
+		top:240px;
+		lefft:100px;
+		border:#00F 1px solid;
+		padding: 15px 10px 10px 10px;
+		width:300;
+		height:auto;
+		font:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+		table-layout:
+		
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+	}
+	
+	 
+.kid3{  
+	display:table; /* กำหนดให้แสดงเหมือนแท็ก table */  
+    top:90px;
+	left:20px;
+	width:250px;  
+    margin:100px;  
+    border:1px solid #333;  
+    border-collapse:collapse;  
+}  
+.kid4{
+
+	border: #FF6 1px solid;
+	padding: 35px 10px 10px 10px;
+	width: 40px;
+	height: 44px;
+	word-spacing: 5px;
+	color: #000;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	
+}
+.kid5{
+		-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	}
+	.kid6{
+	top60px;
+	left: 112px;
+	border: #FF6 1px solid;
+	padding: 35px 10px 10px 10px;
+	width: 980px;
+	height: 100px;
+	position: absolute;
+	background:url(image/im008.jpg)repeat-x;
+	font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+	word-spacing: 5px;
+	color: #000;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	top: -5px;}
+	.kid7{
+    top60px;
+	left: 616px;
+	padding: 35px 10px 10px 10px;
+	width: 190px;
+	height: 52px;
+	position: absolute;
+	font: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 16px;
+	word-spacing: 5px;
+	color: #00F;
+	top: 476px;

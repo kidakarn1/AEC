@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background:#0FF;
+	font:"Comic Sans MS", cursive;
+	font-size:10pt;
+	color:#00F
+	}
+#head_title{
+	height: 50px;
+	width: 100%;
+	border:#00F 1px solid;
+	background:url(image/b1.jpg)repeat;
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	position:fixed;
+	}
+.detail{
+	top:100px;
+	left:250px;
+	border:#FF6 1px solid;
+	padding: 35px 10px 10px 10px;
+	width:600px;
+	height:50%;
+	position:absolute;
+	background:url(image/b4.jpg) repeat-x;
+	background:color #FFF;
+	font:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+	word-spacing: 5px;
+	color:#000;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	}
+	
+	
+.kid3{}

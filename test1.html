@@ -1,0 +1,83 @@
+<!-- สคริปนี้แก้ไขและดัดแปลงแล้วด้วยทีมงานดีเอสเอ็น -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>focus  effect by dsn</title>
+
+$(function() {
+	var sWidth = $("#dsn").width(); 
+	var len = $("#dsn ul li").length; 
+	var index = 0;
+	var picTimer;
+	
+	var btn = "<div class='btnBg'></div><div class='btn'>";
+	for(var i=0; i < len; i++) {
+		btn += "<span>" + (i+1) + "</span>";
+	}
+	btn += "</div>"
+	$("#dsn").append(btn);
+	$("#dsn .btnBg").css("opacity",0.5);
+	
+
+	$("#dsn .btn span").mouseenter(function() {
+		index = $("#dsn .btn span").index(this);
+		showPics(index);
+	}).eq(0).trigger("mouseenter");
+
+	$("#dsn ul").css("width",sWidth * (len + 1));
+	
+	$("#dsn ul li div").hover(function() {
+		$(this).siblings().css("opacity",0.7);
+	},function() {
+		$("#dsn ul li div").css("opacity",1);
+	});
+	
+	$("#dsn").hover(function() {
+		clearInterval(picTimer);
+	},function() {
+		picTimer = setInterval(function() {
+			if(index == len) { 
+				showFirPic();
+				index = 0;
+			} else {
+				showPics(index);
+			}
+			index++;
+		},3000); 
+	}).trigger("mouseleave");
+	
+	function showPics(index) { 
+		var nowLeft = -index*sWidth; 
+		$("#dsn ul").stop(true,false).animate({"left":nowLeft},500); 
+		$("#dsn .btn span").removeClass("on").eq(index).addClass("on")
+	}
+	
+	function showFirPic() { 
+		$("#dsn ul").append($("#dsn ul li:first").clone());
+		var nowLeft = -len*sWidth;
+		$("#dsn ul").stop(true,false).animate({"left":nowLeft},500,function() {
+			$("#dsn ul").css("left","0");
+			$("#dsn ul li:last").remove();
+		}); 
+		$("#dsn .btn span").removeClass("on").eq(0).addClass("on");
+	}
+});
+
+</script>
+
+</head>
+
+<body>
+
+
+
+	<div id="dsn">
+<ul>
+		 <li> <div style="left:0; top:0; width:694px; height:396px;"><a href="#" target="_blank"><img src="image/im8.jpg" alt="" /></a></div> </li>
+            <li> <div style="left:0; top:0; width:694px; height:396px;"><a href="#" target="_blank"><img src="image/im9.jpg" alt="" /></a></div> </li>
+                      
+            
+		</ul>
+	</div>
+
+</body>
+</html>
